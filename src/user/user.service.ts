@@ -51,7 +51,7 @@ export class UserService {
     if (existing) {
       throw new ConflictException({
         success: false,
-        message: `${username}은 이미 사용중인 이름 입니다`
+        message: `${username}은 이미 사용중인 이름 입니다.`
       })
     }
   }
